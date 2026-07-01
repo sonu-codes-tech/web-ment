@@ -4,6 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chillvibes</title>
+    <style>
+        main div{
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            width: 200px;
+            margin: 20px;
+            box-shadow: 4px 4px 8px black;
+            
+        }
+        div img{
+            width: 100%;
+            object-fit: cover;
+            height: 160px;
+            border-radius: 10px;
+        }
+        main div button{
+            border: none;
+            border-radius: 10px;
+            background-color: orange;
+            color: white;
+            width: 90%;
+        }
+        .product{
+            display: flex;
+            flex-wrap: wrap;
+            gap:30px;
+            
+        }
+        main div:hover{
+            background-color: lightseagreen ;
+            transform: scale(1.03);
+            color: white;
+
+        }
+        #home{
+            height: 40;
+            width: 40;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -29,64 +70,92 @@
     </header>
     <main>
         <h2>trending items</h2>
-        <div>
+        <section class="product">
+            <div>
             <img src="https://media.istockphoto.com/id/1152767411/photo/cup-of-coffee-latte-isolated-on-white-background-with-clipping-path.jpg?s=612x612&w=0&k=20&c=24HBAvkahjo8LKV-6DRUklQzPJUqxjmVlBFtV5BG4tU=" alt="" width="150" height="150">
             <p>coffee-latte</p>
-            <p>79.0</p>
+            <p>₹79.0 /-</p>
+            <button>Add to cart</button>
         </div>
         <div>
             <img src="https://images.pexels.com/photos/11354487/pexels-photo-11354487.jpeg" alt="" width="180" height="150">
             <p>Chicken burger</p>
-            <p>120.0</p>
+            <p>₹120.0 /-</p>
+            <button>Add to cart</button>
         </div>
         <div>
             <img src="https://images.pexels.com/photos/31150259/pexels-photo-31150259.jpeg" alt="" width="150" height="150">
             <p>egg salad sandwich</p>
-            <p>129</p>
+            <p>₹129 /-</p>
+            <button>Add to cart</button>
         </div>
+        </section>
         
         
         <h2 id="menu">Menu</h2>
-        <div><img src="https://images.pexels.com/photos/8743859/pexels-photo-8743859.jpeg" alt="" width="150" height="170">
+        <section class="product">
+            <div><img src="https://images.pexels.com/photos/8743859/pexels-photo-8743859.jpeg" alt="" width="150" height="170">
         <p>Oreo shake</p>
-        <p>79.0</p>
-    <p>49</p></div>
+        <p>₹79.0 /-</p>
+        <button>Add to cart</button>
+        </div>
     <div>
         <img src="https://images.pexels.com/photos/11762852/pexels-photo-11762852.jpeg" alt="" width="150" height="150">
         <p>Schezwan Noodles</p>
-        <p>180.0</p>
+        <p>₹180.0 /-</p>
+        <button>Add to cart</button>
 
     </div>
     <div>
         <img src="https://images.pexels.com/photos/35071828/pexels-photo-35071828.jpeg" alt="" width="150" height="150">
         <p>cauliflower Manchurian</p>
+        <p>₹210.0 /-</p>
+        <button>Add to cart</button>
     </div>
     <div>
             <img src="https://media.istockphoto.com/id/1152767411/photo/cup-of-coffee-latte-isolated-on-white-background-with-clipping-path.jpg?s=612x612&w=0&k=20&c=24HBAvkahjo8LKV-6DRUklQzPJUqxjmVlBFtV5BG4tU=" alt="" width="150" height="150">
             <p>coffee-latte</p>
-            <p>79.0</p>
+            <p>₹79.0 /-</p>
+            <button>Add to cart</button>
         </div>
         <div>
             <img src="https://images.pexels.com/photos/11354487/pexels-photo-11354487.jpeg" alt="" width="180" height="150">
             <p>Chicken burger</p>
-            <p>120.0</p>
+            <p>₹120.0 /-</p>
+            <button>Add to cart</button>
         </div>
         <div>
             <img src="https://images.pexels.com/photos/31150259/pexels-photo-31150259.jpeg" alt="" width="150" height="150">
             <p>egg salad sandwich</p>
-            <p>129</p>
+            <p>₹129.0 /-</p>
+            <button>Add to cart</button>
         </div>
         <div>
             <img src="https://images.pexels.com/photos/33430558/pexels-photo-33430558.jpeg" alt="" width="160" height="150">
             <p> grilled paneer </p>
-            <p>198.0</p>
+            <p>₹198.0 /-</p>
+            <button>Add to cart</button>
         </div>
         <div>
             <img src="https://images.pexels.com/photos/10986583/pexels-photo-10986583.jpeg" alt="" width="160" height="150">
             <p>Blue lagoon</p>
-            <p>109.0</p>
+            <p>₹109.0 /-</p>
+            <button>Add to cart</button>
         </div>
-
+        <div>
+            <img src="https://images.pexels.com/photos/14766328/pexels-photo-14766328.jpeg" alt=""  width="160" height="150">
+            <p>berry meringue roll</p>
+            <p>₹149.0 /-</p>
+            <button>Add to cart</button>
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/14608736/pexels-photo-14608736.jpeg" alt=""  width="160" height="150">
+            <p>special ice cream</p>
+            <p>₹109.0 /-</p>
+            <button>Add to cart</button>
+        </div>
+        </section>
+</main>
         <section id="review">
             <h2>Review</h2>
             <div><p>ram</p>
@@ -97,7 +166,7 @@
             <p>We celebrated our anniversary here, and it was perfect. The atmosphere was incredibly romantic, and the restaurant even surprised us with a complimentary dessert.</p></div>
         </section>
 
-    </main>
+    
     <footer>
         <section id="about"><h2>About Us</h2>
         <p>It all started in a tiny kitchen with one espresso machine and a dream. Founded in 2022, Chillvibes was born out of a love for community and a deep respect for the perfect brew. Today, we expand our cafe with some new food items and we remain dedicated to roasting locally-sourced beans and serving Jharsuguda with the same passion that sparked our journey.</p></section>
