@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-color: #f4f7f6;
+        }
+        .navbar{
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 15px 30px;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+        }
+        .logo{
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: transform 0.3s;
+        }
+        .logo:hover{
+            transform: scale(1.05);
+        }
+        .nav-links{
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+        .nav-links a{
+            color: rgba(225,225,225,0.8);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 8px 16px;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        .nav-links a::after{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: 0;
+            left: 50%;
+            background-color: #00d2ff;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+            border-radius: 20px;
+        }
+        .nav-links a:hover{
+            color: #fff;
+
+        }
+        .nav-links a:hover::after{
+            width: 80%;
+
+        }
+        .cta-button{
+            background: #00d2ff;
+            color: #133c72;
+            border-radius: 20px;
+            font-weight: bold;
+
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">LOGO</a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class=""cta-button>Signup</a></li>
+            <li><a href="#" class=""cta-button>Login</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
