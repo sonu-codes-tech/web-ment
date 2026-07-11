@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-color: azure;
+
+        }
+        .logo{
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: transform 0.3s;
+        }
+        .logo:hover{
+            transform: scale(1.05);
+        }
+        .navbar{
+            background: linear-gradient(135deg,  #1e3c72 0%, #2a5298 100%);
+            justify-content: space-between;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top:0;
+            z-index: 1000;
+
+        }
+        .nav-link{
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+        .nav-link a{
+            color: rgba(225,225,225,0.8);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 8px 16px;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        .nav-link a::after{
+            content: "";
+            bottom: 0;
+            position: absolute;
+            background-color: #00d2ff; ;
+            left: 50%;
+            height: 3px;
+            width: 0;
+            transform: translateX(-50%);
+            transition: all 0.3s ease;
+            border-radius: 20px;
+        }
+        
+        .nav-link a:hover{
+            color: #fff;
+        }
+        .nav-link a:hover::after{
+            width: 80%;
+
+        }
+        .cta-button{
+            background: #00d2ff;
+            color: #133c72 !important;
+            border-radius: 20px;
+            font-weight: bold !important;
+            box-shadow: 0px 4px 10px rgba(0, 210, 225, 0.3);
+
+        }
+        .cta-button:hover{
+            background-color: #fff;
+            color: #2a5298 !important;
+
+        }
+        .cta-button:hover::after{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">LOGO</a>
+        <ul class="nav-link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="cta-button">Signup</a></li>
+            <li><a href="#" class="cta-button">Login</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
