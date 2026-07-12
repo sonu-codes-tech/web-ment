@@ -73,10 +73,19 @@
         }
         .cta-button{
             background: #00d2ff;
-            color: #133c72;
+            color: #133c72 !important;
             border-radius: 20px;
-            font-weight: bold;
+            font-weight: bold !important;
+            box-shadow: 0px 4px 10px rgba(0, 210, 225, 0.3);
 
+        }
+        .cta-button:hover{
+            background-color: #fff;
+            color: #2a5298 !important;
+
+        }
+        .cta-button:hover::after{
+            display: none;
         }
 
     </style>
@@ -89,8 +98,8 @@
             <li><a href="#">Services</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#" class=""cta-button>Signup</a></li>
-            <li><a href="#" class=""cta-button>Login</a></li>
+            <li><a href="#" class="cta-button">Signup</a></li>
+            <li><a href="#" class="cta-button">Login</a></li>
         </ul>
     </nav>
 </body>
